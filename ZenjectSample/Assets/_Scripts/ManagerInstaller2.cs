@@ -8,7 +8,7 @@ namespace Sample2Scripts
         {
             //Container.Bind<IGameManagerDont>().To<GameManagerZenjectDont1>().FromComponentInHierarchy().AsSingle().NonLazy();
             
-            //Container.Bind<IGameManagerDont>().To<GameManagerZenjectDont2>().AsSingle().NonLazy();
+            Container.Bind<IGameManagerDont>().To<GameManagerZenjectDont2>().AsSingle().NonLazy();
         }
     }
 }

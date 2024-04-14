@@ -21,8 +21,8 @@ namespace Sample1Scripts
         public void ValueChanged()
         {
             Debug.Log("Value updated on " + nameof(GameManagerNormalSingleton));
-            //OnValueChanged?.Invoke();
-            //IsValueChanged = true;
+            OnValueChanged?.Invoke();
+            IsValueChanged = true;
         }
     }    
 }

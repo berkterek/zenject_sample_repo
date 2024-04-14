@@ -6,9 +6,9 @@ namespace Sample2Scripts
     {
         public override void InstallBindings()
         {
-             Container.Bind<IGameManager>().To<GameManagerZenject1>().FromComponentInHierarchy().AsSingle().NonLazy();
+             //Container.Bind<IGameManager>().To<GameManagerZenject1>().FromComponentInHierarchy().AsSingle().NonLazy();
             
-            //Container.Bind<IGameManager>().To<GameManagerZenject2>().AsSingle().NonLazy();
+            Container.Bind<IGameManager>().To<GameManagerZenject2>().AsSingle().NonLazy();
         }
     }
 }

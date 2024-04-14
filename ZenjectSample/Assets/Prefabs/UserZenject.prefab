@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3914853737306253787}
   - component: {fileID: 8394130182977301670}
-  - component: {fileID: 6716191165417650636}
+  - component: {fileID: 3839034408161123811}
   m_Layer: 0
   m_Name: UserZenject
   m_TagString: Untagged
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5c546bc9aa4d4c9db1db9ccd2d8c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6716191165417650636
+--- !u!114 &3839034408161123811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
