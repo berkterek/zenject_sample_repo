@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManagerNormalSingleton : MonoBehaviour
+namespace Sample1Scripts
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManagerNormalSingleton : MonoBehaviour
     {
-        
-    }
+        public static GameManagerNormalSingleton Instance { get; private set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public event System.Action OnValueChanged;
+        public bool IsValueChanged { get; set; } = false;
+
+        void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+        }
+
+        [ContextMenu(nameof(ValueChanged))]
+        public void ValueChanged()
+        {
+            Debug.Log("Value updated on " + nameof(GameManagerNormalSingleton));
+            //OnValueChanged?.Invoke();
+            //IsValueChanged = true;
+        }
+    }    
 }
